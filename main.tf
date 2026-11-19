@@ -16,4 +16,7 @@ provider "aws" {
 resource "aws_instance" "Rameshinfra" {
 	ami = "ami-06f98347e4f9c7328" 
 	instance_type = "t3.micro"
+	tags = {
+		name="rameshinstance"
+		}
 }
